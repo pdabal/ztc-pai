@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Tytuł strony (ang. page title) - <title> - umieszczony w elemencie head, wyświetlany w pasku tytułowym przeglądarki i w zakładce -->
+	<title>Pierwszy formularz</title>
+</head>
+
+<body>
+	<p>To jest pierwszy formularz.</p>
+	<!-- Formularz umieszczmy w elemencie body,  -->
+	<form>
+		<!-- Znacznik input z atrybutem type="text" umożliwia wpisywanie treści -->
+		Imię: <input type="text" name="imie" /><br />
+		Nazwisko: <input type="text" name="nazwisko" /><br />
+		<!-- Znacznik input z atrybutem type="radio" umożliwia wybór punktu -->
+		<input type="radio" name="plec" value="male" />
+		Mężczyzna<br />
+		<input type="radio" name="plec" value="female" />
+		Kobieta<br />
+		<!-- Znacznik input z atrybutem type="submit" umożliwia wysłanie wprowadzonych wartości -->
+		<input type="submit" value="Wyślij">
+	</form>
+
+</body>
+
+</html>
