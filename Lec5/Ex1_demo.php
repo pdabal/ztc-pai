@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1); // strict requirement
-    // echo "Hello world<br/>";
-    // $test = 4;
-    // echo var_dump($test);
-    // echo "<br/>";
-    // echo is_int($test);
-
+    echo "Hello world<br/>";
+    $test = 4;
+    echo var_dump($test);
+    echo "<br/>";
+    echo is_int($test);
+    echo "<br/>";
     echo strlen("Hello world!");
     echo "<br/>"; 
 
@@ -31,13 +31,13 @@ var_dump(is_float($x));
 echo "<br/>";
 
 // Check if a numeric value is finite or infinite
-$x = 1.9e411;
+$x = 1.9e311;
 var_dump($x);
 echo "<br/>";
 echo "<br/>";
 
 // Invalid calculation will return a NaN value
-$x = acos(8);
+$x = acos(1);
 var_dump($x);
 
 echo "<br/>";
@@ -99,8 +99,9 @@ echo cars[0];
 
 echo "<br>"; 
 
-  $t = date("H")-14;
-  echo $t . "<br/>";
+$t = date("H")-14;
+$t = 19;
+echo $t . "<br/>";
   
   if ($t < "20") {
     echo "Have a good day!" . "<br/>";
@@ -258,9 +259,9 @@ echo "<br>";
       function addNumbers(int $a, int $b) {
           return $a + $b;
         }
-        //   echo addNumbers(5, "5 days");
+          // echo addNumbers(5, "5");
         echo addNumbers(5, (int)"5");
-        //   echo addNumbers(5, 5.0);
+          // echo addNumbers(5, 5.0);
         
         echo "<br>"; 
         echo "<br>"; 
@@ -361,7 +362,7 @@ function addition() {
 }
  
 addition();
-echo $z;
+echo $z . "<br>";
 ?>
 
 <?php
@@ -377,5 +378,4 @@ echo $_SERVER['HTTP_USER_AGENT'];
 echo "<br>";
 echo $_SERVER['SCRIPT_NAME'];
 
-getenv();
 ?>
